@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {
+    font-family: 'Poppins', sans-serif !important;
+    color: white !important; 
+    background-color: #131723 !important;
+}
+p {
+    color: #7E8792;
+}
+nav {
+    display: flex;
+    width: 100%;
+    background-color: #1D2430;
+    position: fixed;
+}
+nav a {
+    padding: 0 10px; 
+    margin: 20px 5px; 
+    color: #7E8792;
+    text-decoration: none;
+}
+nav a:hover {
+    color: white;
+}
+nav a:first-child {
+    padding: 0px 15px; 
+    margin: 20px 0; 
+    font-weight: 500; 
+    color: white;
+    border-right: 1px solid #7E8792; 
+}
+.main-container {
+    width: 90%;
+    margin: auto;
+    padding: 64px 0; 
+}
+.main-container > * {
+    padding-top: 50px;
+}
+.profile {
+    margin: auto; 
+    display: grid;
+    grid-template-columns: 55% 35%;
+    grid-gap: 7.5%;
+    justify-items: center;
+    align-items: center;
+}
+.information span p {
+    margin: 35px 0;
+}
+.picture {
+    text-align: center;
+}
+.picture img {
+    width: 330px;
+    object-fit: contain;
+}
+.buttons button {
+    padding: 10px 20px;
+    margin-right: 10px; 
+    margin-bottom: 10px;
+    border: none; 
+}
+.buttons button:first-child {
+    color: white; 
+    background-color: #9D00FF; 
+}
+.buttons button:last-child {
+    color: #7E8792;
+    background-color: #1D2430;
+}
+.picture .buttons {
+    display: none;
+}
+.header {
+    margin: auto;
+    text-align: center;
+    width: 75%;
+}
+.header img {
+    width: 40px;
+    margin-bottom: 20px;
+}
+.project-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    grid-gap: 5%;
+}
+.project-container img {
+    width: 100%;
+    object-fit: contain;
+}
+.project-container .buttons button {
+    color: white; 
+    background-color: #9D00FF; 
+    margin-bottom: 40px; 
+}
+.explanation {
+    line-height: 30px; 
+    margin-top: 40px; 
+    margin-bottom: 20px; 
+}
+.skill-container {
+    margin-top: 65px;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-column-gap: 2%; 
+}
+.skill-container p {
+    color: white;
+    background-color: #1D2430;
+    padding: 15px 25px; 
+}
+.skill-container p img {
+    height: 25px; 
+    margin-right: 15px; 
+}
+.skill-container p span {
+    vertical-align: bottom;
+}
+footer {
+    background-color: #1D2430;
+}
+.thank-you {
+    margin: 0 auto; 
+    text-align: right;
+    width: 90%;
+    padding: 15px 0;
+}
+.thank-you img {
+    height: 40px; 
+    cursor: pointer;
+}
+@media only screen and (max-width: 740px) {
+    nav a:not(:first-child) {
+        display: none;
+    }
+    nav a:first-child {
+        border-right: none;
+    }
+    .main-container {
+        width: 75%;
+    }
+    .profile {
+        grid-template-columns: 100%;
+        grid-gap: 0; 
+    }
+    .picture img {
+        width: 220px; 
+    }
+    .information .buttons {
+        display: none;
+    }
+    .picture .buttons {
+        display: block;
+    }
+    .project-container {
+        grid-template-columns: 100%;
+        grid-gap: 0%;
+    }
+    .skill-container {
+        grid-template-columns: 100%;
+        grid-gap: 0; 
+    }
+}
