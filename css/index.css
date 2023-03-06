@@ -45,6 +45,7 @@ nav a:first-child {
     grid-gap: 7.5%;
     justify-items: center;
     align-items: center;
+    margin-top: 50px; 
 }
 .information span p {
     margin: 35px 0;
@@ -100,8 +101,7 @@ nav a:first-child {
 }
 .explanation {
     line-height: 30px; 
-    margin-top: 40px; 
-    margin-bottom: 20px; 
+    margin: 20px 0;
     color: #7E8792;
     background-color: #1D2430;
     padding: 20px 40px;
@@ -176,6 +176,9 @@ footer {
     .project-container {
         grid-template-columns: 100%;
         grid-gap: 0%;
+    }
+    .explanation {
+        height: auto; 
     }
     .skill-container {
         grid-template-columns: 100%;
