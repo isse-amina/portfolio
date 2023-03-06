@@ -13,6 +13,7 @@ nav {
     background-color: #1D2430;
     border-bottom: 1px solid #131723;
     position: fixed;
+    z-index: 1; 
 }
 nav a {
     padding: 0 10px; 
@@ -88,7 +89,6 @@ nav a:first-child {
     display: grid;
     grid-template-columns: 47.5% 47.5%;
     grid-gap: 5%;
-    overflow: hidden;
 }
 .project-container img {
     width: 100%;
@@ -104,8 +104,8 @@ nav a:first-child {
     margin: 20px 0;
     color: #7E8792;
     background-color: #1D2430;
-    padding: 20px 40px;
-    height: 100%; 
+    padding: 20px 40px 120px 40px; 
+    position: relative;
 }
 .explanation h6 {
     border-bottom: 0.5px solid white; 
@@ -118,6 +118,8 @@ nav a:first-child {
 }
 .explanation .buttons {
     margin-top: 40px; 
+    position: absolute;
+    bottom: 0; 
 }
 .skill-container {
     margin-top: 65px;
@@ -177,9 +179,23 @@ footer {
     .project-container {
         grid-template-columns: 100%;
         grid-gap: 0%;
+        grid-template-areas: 
+        "project1"
+        "project1-explanation"
+        "project2"
+        "project2-explanation";
     }
-    .explanation {
-        height: auto; 
+    .project-1 {
+        grid-area: project1;
+    }
+    .project-1.explanation {
+        grid-area: project1-explanation;
+    }
+    .project-2 {
+        grid-area: project2; 
+    }
+    .project-2.explanation {
+        grid-area: project2-explanation; 
     }
     .skill-container {
         grid-template-columns: 100%;
