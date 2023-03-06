@@ -8,6 +8,7 @@ p {
     color: #7E8792;
 }
 nav {
+    font-size: 18px; 
     display: flex;
     width: 100%;
     background-color: #1D2430;
@@ -32,7 +33,7 @@ nav a:first-child {
     border-right: 1px solid #7E8792; 
 }
 .main-container {
-    width: 90%;
+    width: 75%;
     margin: auto;
     padding: 64px 0; 
 }
@@ -43,10 +44,14 @@ nav a:first-child {
     margin: auto; 
     display: grid;
     grid-template-columns: 55% 35%;
-    grid-gap: 7.5%;
+    grid-gap: 10%;
     justify-items: center;
     align-items: center;
     margin-top: 0; 
+    line-height: 30px; 
+}
+.profile h2 {
+    line-height: 40px; 
 }
 .information span p {
     margin: 35px 0;
@@ -165,9 +170,6 @@ footer {
     }
     nav a:first-child {
         border-right: none;
-    }
-    .main-container {
-        width: 75%;
     }
     .profile {
         grid-template-columns: 100%;
