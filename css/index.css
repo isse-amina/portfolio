@@ -178,7 +178,7 @@ footer {
     }
     .project-container {
         grid-template-columns: 100%;
-        grid-gap: 0%;
+        grid-gap: 2%;
         grid-template-areas: 
         "project1"
         "project1-explanation"
