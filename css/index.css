@@ -11,6 +11,7 @@ nav {
     display: flex;
     width: 100%;
     background-color: #1D2430;
+    border: 1px solid #131723;
     position: fixed;
 }
 nav a {
@@ -86,6 +87,7 @@ nav a:first-child {
     display: grid;
     grid-template-columns: 47.5% 47.5%;
     grid-gap: 5%;
+    overflow: hidden;
 }
 .project-container img {
     width: 100%;
@@ -100,6 +102,22 @@ nav a:first-child {
     line-height: 30px; 
     margin-top: 40px; 
     margin-bottom: 20px; 
+    color: #7E8792;
+    background-color: #1D2430;
+    padding: 20px 40px;
+    height: 100%; 
+}
+.explanation h6 {
+    border-bottom: 0.5px solid white; 
+    padding-bottom: 15px; 
+    color: white;
+    margin-top: 20px; 
+}
+.explanation p {
+    margin-top: 25px; 
+}
+.explanation .buttons {
+    margin-top: 40px; 
 }
 .skill-container {
     margin-top: 65px;
