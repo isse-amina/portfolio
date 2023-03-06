@@ -11,7 +11,7 @@ nav {
     display: flex;
     width: 100%;
     background-color: #1D2430;
-    border: 1px solid #131723;
+    border-bottom: 1px solid #131723;
     position: fixed;
 }
 nav a {
@@ -139,6 +139,7 @@ nav a:first-child {
 }
 footer {
     background-color: #1D2430;
+    border-top: 1px solid #131723;
 }
 .thank-you {
     margin: 0 auto; 
